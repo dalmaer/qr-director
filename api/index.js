@@ -1,15 +1,7 @@
 // api/index.js
 import fs from 'fs';
 import path from 'path';
-
-const externalUrls = [
-  'https://x.com/@dalmaer',
-  'https://www.youtube.com/c/hasanabi',
-  'https://youtu.be/JZRcYaAYWg4?si=KPNO-0t-iCa6MQvk', // Intelligence Squared Catholic Church
-  'https://ainativedev.io/',
-  'https://www.spaghettimonster.org/',
-  'https://www.wrexhamafc.co.uk/'
-];
+import urlsData from '../urls.json';
 
 export default function handler(req, res) {
   // 1. Build full URLs for any images in public/photos
@@ -26,7 +18,7 @@ export default function handler(req, res) {
   }
 
   // 2. Combine external + photo URLs
-  const all = externalUrls.concat(photoUrls);
+  const all = urlsData.externalUrls.concat(photoUrls);
 
   // 3. Pick one at random and redirect
   const choice = all[Math.floor(Math.random() * all.length)];
