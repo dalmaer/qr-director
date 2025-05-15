@@ -1,0 +1,15 @@
+{
+  "name": "qr-director",
+  "version": "1.0.0",
+  "description": "QR director randomly sends a client to one of the URLs configured for it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vercel": "^41.7.6"
+  }
+}
