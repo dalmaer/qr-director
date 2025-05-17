@@ -1,4 +1,4 @@
-// api/index.js
+// Production URL: https://qr-director.vercel.app/api/index.js
 import fs from 'fs';
 import path from 'path';
 import urlsData from '../urls.json';
